@@ -12,8 +12,13 @@ public class CuentaBancaria {
     private String moneda;
     private String tipo;
 
+    //Constructor
+    public CuentaBancaria(){
+        System.out.println("Se creo el objeto : " + this);
+    }
+    
     public void mostrarDatos() {
-        System.out.println(CPU + " " + saldo + " " + moneda + " " + tipo);
+        System.out.println(alias + " " + CPU + " " + saldo + " " + moneda + " " + tipo);
     }
 
     public void setAlias(String alias) {
@@ -46,4 +51,8 @@ public class CuentaBancaria {
         }
     }
 
+    public int suma(int a, int b) {
+        int resultado = a + b;
+        return resultado;
+    }
 }

@@ -18,7 +18,16 @@ public class Principal {
         obj1.setMoneda("Pesos");
         obj1.setTipo("caja de ahorros");
         
-        obj2.setAlias("");
-    }
-    
+        obj2.setAlias("Cuenta_123");
+        obj2.setMoneda("Dolar");
+        obj2.setTipo("caja de ahorros");
+        
+        obj3.setAlias("caja3");
+        obj3.setMoneda("Euro");
+        obj3.setTipo("cuenta corriente");
+        
+        obj1.mostrarDatos();
+        obj2.mostrarDatos();
+        obj3.mostrarDatos();
+    }    
 }
