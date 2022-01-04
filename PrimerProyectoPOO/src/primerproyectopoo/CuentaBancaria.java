@@ -13,46 +13,43 @@ public class CuentaBancaria {
     private String tipo;
 
     //Constructor
-    public CuentaBancaria(){
-        System.out.println("Se creo el objeto : " + this);
+
+    public CuentaBancaria(String alias, String moneda, String tipo) {
+        this.CPU = generaCPU();
+        setAlias(alias);
+        setMoneda(moneda);
+        setTipo(tipo);
     }
+    
     
     public void mostrarDatos() {
         System.out.println(alias + " " + CPU + " " + saldo + " " + moneda + " " + tipo);
     }
+    
+    private String generaCPU(){
+        int x = (int)(Math.random()*100);
+        String y = "" + x;
+        return y;
+    }
+    
 
     public void setAlias(String alias) {
-        if (this.alias != null) {
             this.alias = alias;
-        }
     }
 
     public void setMoneda(String moneda) {
-        if (moneda != null) {
             this.moneda = moneda;
-        }
     }
 
     public void setCPU(String CPU) {
-        if (this.CPU != null) {
-            this.CPU = CPU;
-        }
+        this.CPU = CPU;
     }
 
     public void setSaldo(double saldo) {
-        if (this.saldo != 0.0) {
             this.saldo = saldo;
-        }
     }
 
     public void setTipo(String tipo) {
-        if (this.tipo != null) {
             this.tipo = tipo;
-        }
-    }
-
-    public int suma(int a, int b) {
-        int resultado = a + b;
-        return resultado;
     }
 }
